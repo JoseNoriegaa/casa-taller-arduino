@@ -1,0 +1,10 @@
+C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\bin\Debug\PlantillTallerArduino.exe.config
+C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\bin\Debug\PlantillTallerArduino.exe
+C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\bin\Debug\PlantillTallerArduino.pdb
+C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.csprojResolveAssemblyReference.cache
+C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.Form1.resources
+C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.Properties.Resources.resources
+C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.csproj.GenerateResource.Cache
+C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.csproj.CoreCompileInputs.cache
+C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.exe
+C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.pdb

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantillTallerArduino", "PlantillTallerArduino\PlantillTallerArduino.csproj", "{1666BD1C-AB17-4762-AE6A-DC00FD199756}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1666BD1C-AB17-4762-AE6A-DC00FD199756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1666BD1C-AB17-4762-AE6A-DC00FD199756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1666BD1C-AB17-4762-AE6A-DC00FD199756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1666BD1C-AB17-4762-AE6A-DC00FD199756}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AB11182-6752-4F3C-9602-3CBB41FE7506}
+	EndGlobalSection
+EndGlobal
