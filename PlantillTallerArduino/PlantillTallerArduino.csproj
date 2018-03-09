@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArduinoConf.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +145,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lightOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p8.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
