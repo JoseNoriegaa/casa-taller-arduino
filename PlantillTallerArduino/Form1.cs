@@ -19,7 +19,9 @@ namespace PlantillTallerArduino
         List<Image> spritesDoor = new List<Image>();
         List<PictureBox> lights = new List<PictureBox>();
         ArduinoConf arduino = new ArduinoConf(9600);
-        SerialPort serialPort;
+        bool LED1On = false, LED2On = false, LED3On = false, LED4On = false, LED5On = false;
+        //SerialPort serialPort;
+        string instrucciones = "";
 
         public Form1()
         {
@@ -71,33 +73,49 @@ namespace PlantillTallerArduino
         }
 
         private void btnOpenG_Click(object sender, EventArgs e)
-        {
-            btnCloseG.Enabled = true;
+        {            
             btnOpenG.Enabled = false;
             new Thread(new ParameterizedThreadStart(garage)).Start(true);
+            btnCloseG.Enabled = true;
         }
         
         private void btnCloseG_Click(object sender, EventArgs e)
         {
-            btnCloseG.Enabled = false;
-            btnOpenG.Enabled = true;
+            btnCloseG.Enabled = false;            
             new Thread(new ParameterizedThreadStart(garage)).Start(false);
+            btnOpenG.Enabled = true;
         }
 
         private void light_6_Click(object sender, EventArgs e)
         {
-
+            if (LED3On)
+            {
+                switchLight(false, 5);
+                Thread.Sleep(50);
+                serialPort.Write(0 + "");
+                LED3On = false;
+            }
+            else
+            {
+                switchLight(true, 5);
+                Thread.Sleep(50);
+                serialPort.Write(4 + "");
+                LED3On = true;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             allLights(true, 50);
+            serialPort.Write(1 + "");
+            //MessageBox.Show(serialPort.ReadLine());
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             allLights(false, 50);
+            serialPort.Write(0 + "");
         }
 
 
@@ -198,7 +216,7 @@ namespace PlantillTallerArduino
                     {
                         pb_Garage.BackgroundImage = spritesGarage[i];
                         Thread.Sleep(100);
-                    }
+                    }           
                 }
             }
             catch (Exception e)
@@ -272,8 +290,146 @@ namespace PlantillTallerArduino
             }
         }
 
-#endregion
 
+        #endregion
 
+        private void light_2_Click(object sender, EventArgs e)
+        {
+            if (LED1On)
+            {
+                switchLight(false, 0);
+                Thread.Sleep(50);
+                switchLight(false, 1);
+                serialPort.Write(0 + "");
+                LED1On = false;
+            }
+            else
+            {
+                switchLight(true, 0);
+                Thread.Sleep(50);
+                switchLight(true, 1);
+                serialPort.Write(2 + "");
+                LED1On = true;
+            }
+            
+        }
+
+        private void light_1_Click(object sender, EventArgs e)
+        {
+            if (LED1On)
+            {
+                switchLight(false, 0);
+                Thread.Sleep(50);
+                switchLight(false, 1);
+                serialPort.Write(0 + "");
+                LED1On = false;
+            }
+            else
+            {
+                switchLight(true, 0);
+                Thread.Sleep(50);
+                switchLight(true, 1);
+                serialPort.Write(2 + "");
+                LED1On = true;
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (serialPort.IsOpen)
+            {
+                if (!string.IsNullOrEmpty(serialPort.ReadLine().Trim()))
+                {
+                    instrucciones += serialPort.ReadLine() + "\n";
+                    Console.WriteLine("Entrando");
+                    //button1.Click += new EventHandler(button1_Click);
+                }
+            }
+        }
+
+        private void serialPort_PinChanged(object sender, SerialPinChangedEventArgs e)
+        {
+        }
+
+        private void serialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            MessageBox.Show(serialPort.ReadLine());
+        }
+
+        private void light_3_Click(object sender, EventArgs e)
+        {
+            if (LED2On)
+            {
+                switchLight(false, 2);
+                Thread.Sleep(50);
+                switchLight(false, 3);
+                serialPort.Write(0 + "");
+                LED2On = false;
+            }
+            else
+            {
+                switchLight(true, 2);
+                Thread.Sleep(50);
+                switchLight(true, 3);
+                serialPort.Write(3 + "");
+                LED2On = true;
+            }
+        }
+
+        private void light_4_Click(object sender, EventArgs e)
+        {
+            if (LED2On)
+            {
+                switchLight(false, 2);
+                Thread.Sleep(50);
+                switchLight(false, 3);
+                serialPort.Write(0 + "");
+                LED2On = false;
+            }
+            else
+            {
+                switchLight(true, 2);
+                Thread.Sleep(50);
+                switchLight(true, 3);
+                serialPort.Write(3 + "");
+                LED2On = true;
+            }
+        }
+
+        private void light_5_Click(object sender, EventArgs e)
+        {
+            if (LED4On)
+            {
+                switchLight(false, 4);
+                Thread.Sleep(50);
+                serialPort.Write(0 + "");
+                LED4On = false;
+            }
+            else
+            {
+                switchLight(true, 4);
+                Thread.Sleep(50);
+                serialPort.Write(5 + "");
+                LED4On = true;
+            }
+        }
+
+        private void light_7_Click(object sender, EventArgs e)
+        {
+            if (LED5On)
+            {
+                switchLight(false, 6);
+                Thread.Sleep(50);
+                serialPort.Write(0 + "");
+                LED5On = false;
+            }
+            else
+            {
+                switchLight(true, 6);
+                Thread.Sleep(50);
+                serialPort.Write(6 + "");
+                LED5On = true;
+            }
+        }
     }
 }

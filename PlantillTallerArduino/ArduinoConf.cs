@@ -53,7 +53,7 @@ namespace PlantillTallerArduino
         public SerialPort getSerialPort()
         {
             return new SerialPort() {
-                PortName=this.portName,
+                PortName = this.portName,
                 BaudRate=this.baudRate
             };
         }

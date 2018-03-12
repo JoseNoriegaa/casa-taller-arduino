@@ -8,3 +8,12 @@ C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\obj\De
 C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.csproj.CoreCompileInputs.cache
 C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.exe
 C:\Users\Noriega\source\repos\PlantillTallerArduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.pdb
+C:\dev\Repos\casa-taller-arduino\PlantillTallerArduino\bin\Debug\PlantillTallerArduino.exe.config
+C:\dev\Repos\casa-taller-arduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.exe
+C:\dev\Repos\casa-taller-arduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.pdb
+C:\dev\Repos\casa-taller-arduino\PlantillTallerArduino\bin\Debug\PlantillTallerArduino.exe
+C:\dev\Repos\casa-taller-arduino\PlantillTallerArduino\bin\Debug\PlantillTallerArduino.pdb
+C:\dev\Repos\casa-taller-arduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.csprojResolveAssemblyReference.cache
+C:\dev\Repos\casa-taller-arduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.Form1.resources
+C:\dev\Repos\casa-taller-arduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.Properties.Resources.resources
+C:\dev\Repos\casa-taller-arduino\PlantillTallerArduino\obj\Debug\PlantillTallerArduino.csproj.GenerateResource.Cache
